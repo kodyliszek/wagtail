@@ -28,11 +28,9 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        working-directory: ./esgia
         run: pip install -r requirements.txt
 
       - name: Run DB Migrations
-        working-directory: ./esgia
         run: python manage.py migrate
 
 #      - name: Run Server
