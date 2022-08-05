@@ -6,7 +6,7 @@ try:
     from .local import *
 except ImportError:
     pass
-
+print(os.environ)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
