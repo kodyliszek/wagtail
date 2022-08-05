@@ -32,13 +32,6 @@ jobs:
 
       - name: Run DB Migrations
         run: python manage.py migrate
-        with:
-         DBNAME: ${{ env.DBNAME }}
-
-
-#      - name: Run Server
-#        working-directory: ./esgia
-#        run: python manage.py runserver
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
